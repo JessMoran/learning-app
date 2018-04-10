@@ -1,7 +1,9 @@
-body{
+#index{
   background-color: #00ebfe;
 }
-
+h1{
+  text-align: center;
+}
 h5{
   font-size: 3em;
 }
@@ -10,7 +12,9 @@ h3{
   font-size: 6em;
   color: #00c3c9;
 }
-
+p{
+  margin: 0;
+}
 #title{
   font-size: 15em;
 }
@@ -82,4 +86,22 @@ h3{
 
 .material-icons{
   font-size: 1em;
+}
+/*HOME*/
+#home{
+  background-color: #f2f3f4;
+
+}
+.icon-cont{
+  background: white;
+  width: 90%;
+  height: 300px;
+    color: black;
+    text-align: center;
+ font-size: 35px;
+}
+.icon-img{
+  width: 60%;
+  height: auto;
+  margin: 5% 20% 0 20%;
 }
