@@ -12,11 +12,18 @@ $(document).ready(function(){
 
 const getInfo = document.getElementById('info');
 
-getInfo.addEventListener("click", newView);
+getInfo.addEventListener("click", getData,hideInfo);
 
-function newView (test){
-  test.filter(function(obj){
-    console.log(obj.info);
-  })
+
+function hideInfo (){
+
 }
 
+
+function getData (){
+ let info = test[0];
+   let descr = info.information.description;
+   let inst = info.information.instructions;
+
+
+ }
