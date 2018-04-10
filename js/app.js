@@ -12,11 +12,16 @@ $(document).ready(function(){
 
 const getInfo = document.getElementById('info');
 
-getInfo.addEventListener("click", getData);
+getInfo.addEventListener("click", getData,hideInfo);
+
+
+function hideInfo (){
+
+}
+
 
 function getData (){
  let info = test[0];
-// console.log(info);
    let descr = info.information.description;
    let inst = info.information.instructions;
 
