@@ -1,5 +1,5 @@
 const test =[
-  {'info':{
+  {'information':{
     'description': "Los ESTILOS DE APRENDIZAJE son las preferencias o tendencias generales que una persona utiliza como método propio para aprender. Son estrategias que, de alguna manera, utilizamos cada uno de nosotros para aprender.",
     'instructions': "Escoge la respuesta que mejor explique tu preferencia"
     }
@@ -133,7 +133,5 @@ const test =[
       }
     }
   }
-  
-];
 
-newView (test)
+];

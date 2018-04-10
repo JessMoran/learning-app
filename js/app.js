@@ -12,10 +12,13 @@ $(document).ready(function(){
 
 const getInfo = document.getElementById('info');
 
-getInfo.addEventListener("click", newView);
+getInfo.addEventListener("click", getData);
 
-function newView (test){
-  test.filter(function(obj){
-    console.log(obj.info);
-  })
-}
+function getData (){
+ let info = test[0];
+// console.log(info);
+   let descr = info.information.description;
+   let inst = info.information.instructions;
+
+
+ }
