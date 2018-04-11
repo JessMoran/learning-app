@@ -1,8 +1,10 @@
-body{
+#index{
   background-color: #00ebfe;
   font-family: 'Gaegu', cursive;
 }
-
+h1{
+  text-align: center;
+}
 h5{
   font-size: 4em;
 }
