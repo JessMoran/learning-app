@@ -1,7 +1,6 @@
 .DS_Store
-
-assets/.DS_Store
-
+assests/.DS_Store
+assets/img/.DS_Store
 /node_modules
 /public/hot
 /public/storage

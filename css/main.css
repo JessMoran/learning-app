@@ -1,20 +1,29 @@
 #index{
   background-color: #00ebfe;
+  font-family: 'Gaegu', cursive;
 }
 h1{
   text-align: center;
 }
 h5{
-  font-size: 3em;
+  font-size: 4em;
 }
 
 h3{
   font-size: 6em;
   color: #00c3c9;
 }
+
 p{
-  margin: 0;
+  font-size: 4em;
 }
+
+#line{
+  height: 2px;
+  background: #00ebfe;
+
+}
+
 #title{
   font-size: 15em;
 }
@@ -76,7 +85,7 @@ p{
   margin-top: 10%;
 }
 
-#info{
+#send{
   background-color: #f7bc00;
   color:#fff;
   font-size: 4em;
@@ -87,21 +96,16 @@ p{
 .material-icons{
   font-size: 1em;
 }
-/*HOME*/
-#home{
-  background-color: #f2f3f4;
 
+.background2{
+  background-color: #000;
 }
-.icon-cont{
-  background: white;
-  width: 90%;
-  height: 300px;
-    color: black;
-    text-align: center;
- font-size: 35px;
+
+#test-title{
+  color :#f7bc00;
+  font-size: 7em;
 }
-.icon-img{
-  width: 60%;
-  height: auto;
-  margin: 5% 20% 0 20%;
+
+#answers{
+  font-size: 4em;
 }
