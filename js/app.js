@@ -9,11 +9,12 @@ $(document).ready(function(){
   );
 });
 
+
 //funcion que
 const sectionHide = document.querySelector('form');
-const testContainer = $('#test-container');
+const $testContainer = $('#test-container');
 const btnInfo = document.querySelector('#send');
-const title = document.querySelector('#titulo');
+const $title = $('#titulo');
 
 
 sectionHide.addEventListener("click", hideInfo);
@@ -23,32 +24,52 @@ btnInfo.addEventListener("click",getQst);
 
 function hideInfo (){
   sectionHide.style.display = "none";
+
 }
 
 function getInfo (){
 
- let info = test[0];
+   let info = test[0];
    let descr = info.information.description;
    let inst = info.information.instructions;
 
-   title.textContent = "< Learning Styles";
-   testContainer.append($("<p></p>").text(descr));
-   testContainer.append($("<hr/>").attr("id","line").text(descr));
-   testContainer.append($("<h1></h1>").attr("id","test-title").text("Test"));
-   testContainer.append($("<p></p>").text(inst));
+
+   $title.text("Learning Styles");
+   let $descrText =$(`<p text ="descr">${descr}</p>`);
+   let $btnNext = $(`<button id="next">Next</button>`);
+   let $instText=$( `<p>${inst}</p>`);
+
+  $testContainer.append($descrText);
+  $testContainer.append($btnNext);
+  $testContainer.append($instText);
  }
+
 
 function getQst (){
   inquiry.filter(obj => {
     let qust = obj.question
+    let ans = obj.answers
 
-    testContainer.append($("<p></p>").text(qust));
-    testContainer.append($("<input/>").attr("id","test1").attr("type","radio").attr("name","group1"));
-    testContainer.append($("<label></label>").attr("for","test3").attr("id","answers").text("answer"));
+    let $divCont =$(`<div class="divContainer"></div>`);
+    let $qstText = $(`<p>${qust}</p>`);
+    //answer
+    $testContainer.append($divCont);
+    $divCont.append($qstText);
+    getAns(ans)
+
   });
 }
 
+function getAns (ans){
+  for (let i in ans) {
+    paintAnswer(ans[i]);
+  }
+}
 
-function getAns (){
+function paintAnswer(reply) {
+  let $input = $(`<input id="test1" type="radio" name="group1"/>`);
+  let $label =$(`<label for ="test3" id="answers">${reply}</label>`);
 
+  $testContainer.append($input);
+  $testContainer.append($label);
 }
