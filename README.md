@@ -1,9 +1,9 @@
-##My Learn
+#My Learn
 
 App mobile con distintas herramientas que te ayudan a mejorar tu
 autoaprendizaje basado en tu estilo de aprendizaje
 
-#Descripción general
+##Descripción general
 
 Permite al usuario a acceder a tips y herramientas que le ayudan a mejorar en su
 aprendizaje basado en un test que realiza al iniciar sesion con nosotros, el cual le arroja
@@ -12,7 +12,7 @@ un resultado que le indica el estilo y la manera que le facilita aprender.
 De igual manera le brindamos herramientas dentro de la app para facilitar su aprendizaje
 como un todo, calendario, cronometro, Notas, Recordatorios etc..
 
-#Objetivos
+##Objetivos
 
 Tener una app accesible que permita al usuario tener a la mano las herraminetas necesarias para aprender
 durante todo su día

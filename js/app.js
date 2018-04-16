@@ -34,9 +34,9 @@ function getInfo (){
    let inst = info.information.instructions;
 
 
-   $title.text("Learning Styles");
+   $title.text("< Learning Styles");
    let $descrText =$(`<p text ="descr">${descr}</p>`);
-   let $btnNext = $(`<button id="next">Next</button>`);
+   let $btnNext = $(`<a id="next" class= button-collapse show-on-large" data-activates="mobile-demo" ">Next</a>`);
    let $instText=$( `<p>${inst}</p>`);
 
   $testContainer.append($descrText);
@@ -52,7 +52,6 @@ function getQst (){
 
     let $divCont =$(`<div class="divContainer"></div>`);
     let $qstText = $(`<p>${qust}</p>`);
-    //answer
     $testContainer.append($divCont);
     $divCont.append($qstText);
     getAns(ans)
